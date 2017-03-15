@@ -1,0 +1,55 @@
+body
+{
+    margin: 0;
+	padding: 0;
+	background: url(bg.jpg);
+}
+
+*
+{
+	font-family: "Segoe UI";
+	font-size: 14px;
+}
+
+.center_block
+{    
+    margin: auto;
+    padding: 0;
+	padding-top: 50px;
+	text-align: center;
+	height: 500px;
+}
+
+.left_block
+{
+    float: left;
+    width: 50%;
+	height: 100%;
+	padding-top: 80px;
+}
+
+.right_block
+{
+    float: right;
+    width: 50%;
+	height: 100%;
+}
+
+h2
+{
+	margin: 0px;
+}
+
+canvas
+{ 
+    float: right;
+    width: 80%;
+	height: 55%;
+	border: 2px dashed #000;
+	background: rgba(255,255,255,0.5);
+}
+
+#circle, #rectangle, #triangle
+{
+	display: none;
+}
