@@ -1,6 +1,11 @@
 {
   "name": "Lab3_WEB",
   "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "grunt"
+  },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-ace": "^0.1.7",

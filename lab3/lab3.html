@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<meta charset="windows-1251" />
+    <meta charset="windows-1251" />
     <title>Shapes</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="center-block">
-	  <div class="left-block">
-	    <canvas id='canvas'></canvas>
-	  </div>
-	    <div class="right-block">
-		  <form class="form-inline">
-			<div class="form-group">
-			  <h1>Shape:</h1> 
-			  <select class="form-control" id="select"> 
-				<option value="circle">Circle</option> 
-				<option value="rectangle">Rectangle</option> 
-				<option value="triangle">Triangle</option> 
-			  </select> 
-			</div>
-			<div class="form-group"> 
-			  <h2>Fill color:</h2> 
-			  <input class="form-control" id="fill_color" type="text"></input> 
-			</div>
-			<h2>Border color:</h2>
-			<input class="form-control" id="border_color" type="text"></input>
-			<div class="form-group" id="circle">
-			  <h2>Radius:</h2>
-			  <input class="form-control" id="radius" type="text"></input>
-			  <h2>CenterX:</h2>
-			  <input class="form-control" id="centerX" type="text"></input>
-			  <h2>CenterY:</h2>
-			  <input class="form-control" id="centerY" type="text"></input>
-			</div>
-			<div class="form-group" id="rectangle">
-			  <h2>X1:</h2>
-			  <input class="form-control" id="x1_rectangle" type="text"></input>
-			  <h2>Y1:</h2>
-			  <input class="form-control" id="y1_rectangle" type="text"></input>
-			  <h2>X2:</h2>
-			  <input class="form-control" id="x2_rectangle" type="text"></input>
-			  <h2>Y2:</h2>
-			  <input class="form-control" id="y2_rectangle" type="text"></input>
-			</div>
-			<div class="form-group" id="triangle">
-			  <h2>X1:</h2>
-			  <input class="form-control" id="x1_triangle" type="text"></input>
-			  <h2>Y1:</h2>
-			  <input class="form-control" id="y1_triangle" type="text"></input>
-			  <h2>X2:</h2>
-			  <input class="form-control" id="x2_triangle" type="text"></input>
-			  <h2>Y2:</h2>
-			  <input class="form-control" id="y2_triangle" type="text"></input>
-			  <h2>X3:</h2>
-			  <input class="form-control" id="x3_triangle" type="text"></input>
-			  <h2>Y3:</h2>
-			  <input class="form-control" id="y3_triangle" type="text"></input>
-			</div>
-			<h2 id="perimeter"></h2>
-			<h2 id="area"></h2>
-		  </form>
-	  </div>
-	</div>
-    <script type="text/javascript" src="js/shape.js"></script>	
-	<script type="text/javascript" src="js/circle.js"></script>	
-	<script type="text/javascript" src="js/rectangle.js"></script>	
-	<script type="text/javascript" src="js/triangle.js"></script>	
-	<script type="text/javascript" src="js/click.js"></script>
+      <div class="left-block">
+        <canvas id='canvas'></canvas>
+      </div>
+        <div class="right-block">
+          <form class="form-inline">
+            <div class="form-group">
+              <h1>Shape:</h1> 
+              <select class="form-control" id="select"> 
+                <option value="circle">Circle</option> 
+                <option value="rectangle">Rectangle</option> 
+                <option value="triangle">Triangle</option> 
+              </select> 
+            </div>
+            <div class="form-group"> 
+              <h2>Fill color:</h2> 
+              <input class="form-control" id="fill_color" type="text"></input> 
+            </div>
+            <h2>Border color:</h2>
+            <input class="form-control" id="border_color" type="text"></input>
+            <div class="form-group" id="circle">
+              <h2>Radius:</h2>
+              <input class="form-control" id="radius" type="text"></input>
+              <h2>CenterX:</h2>
+              <input class="form-control" id="centerX" type="text"></input>
+              <h2>CenterY:</h2>
+              <input class="form-control" id="centerY" type="text"></input>
+            </div>
+            <div class="form-group" id="rectangle">
+              <h2>X1:</h2>
+              <input class="form-control" id="x1_rectangle" type="text"></input>
+              <h2>Y1:</h2>
+              <input class="form-control" id="y1_rectangle" type="text"></input>
+              <h2>X2:</h2>
+              <input class="form-control" id="x2_rectangle" type="text"></input>
+              <h2>Y2:</h2>
+              <input class="form-control" id="y2_rectangle" type="text"></input>
+            </div>
+            <div class="form-group" id="triangle">
+              <h2>X1:</h2>
+              <input class="form-control" id="x1_triangle" type="text"></input>
+              <h2>Y1:</h2>
+              <input class="form-control" id="y1_triangle" type="text"></input>
+              <h2>X2:</h2>
+              <input class="form-control" id="x2_triangle" type="text"></input>
+              <h2>Y2:</h2>
+              <input class="form-control" id="y2_triangle" type="text"></input>
+              <h2>X3:</h2>
+              <input class="form-control" id="x3_triangle" type="text"></input>
+              <h2>Y3:</h2>
+              <input class="form-control" id="y3_triangle" type="text"></input>
+            </div>
+            <h2 id="perimeter"></h2>
+            <h2 id="area"></h2>
+          </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/shape.js"></script>    
+    <script type="text/javascript" src="js/circle.js"></script>    
+    <script type="text/javascript" src="js/rectangle.js"></script>    
+    <script type="text/javascript" src="js/triangle.js"></script>    
+    <script type="text/javascript" src="js/index.js"></script>
   </body>  
 </html>

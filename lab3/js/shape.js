@@ -18,4 +18,10 @@ Shape.prototype.setBorderColor = function(value){
 Shape.prototype.getBorderColor = function(){
     return this.borderColor;
 };
+
+Shape.prototype.draw = function(){};
+
+Shape.prototype.calculateArea = function(){};
+
+Shape.prototype.calculatePerimeter = function(){};
   
