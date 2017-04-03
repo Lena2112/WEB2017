@@ -1,13 +1,10 @@
 module.exports = 
 {
-    html:
-    {
-        files:
-        [{
+    files:
+        {
             expand: true,
             cwd: '',
             src: 'index.html',
             dest: '.build/'
-         }]
-    }
+         }
 };

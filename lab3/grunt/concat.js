@@ -1,8 +1,8 @@
 module.exports = 
-{
-    js:
-    {
-        src: 'js/*',
-        dest: 'tmp/js/script.js'
-    }
+{ 
+    js: 
+    { 
+        src: 'js/*', 
+        dest: '.build/js/script.js' 
+    } 
 };

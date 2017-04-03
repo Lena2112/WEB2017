@@ -17,24 +17,24 @@ function ShapeDraw(value)
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     switch(value)
     {
-    case "circle" :
-        circle.draw(ctx);
-        document.getElementById("circle").style.display="block";
-        document.getElementById("perimeter").innerHTML = "Perimeter = " + circle.calculatePerimeter();
-        document.getElementById("area").innerHTML = "Area = " + circle.calculatePerimeter();
-        break;
-    case "rectangle" :
-        rectangle.draw(ctx);
-        document.getElementById("rectangle").style.display="block";
-        document.getElementById("perimeter").innerHTML = "Perimeter = " + rectangle.calculatePerimeter();
-        document.getElementById("area").innerHTML = "Area = " + rectangle.calculatePerimeter();
-        break;
-    case "triangle" :
-        triangle.draw(ctx);
-        document.getElementById("triangle").style.display="block";
-        document.getElementById("perimeter").innerHTML = "Perimeter = " + triangle.calculatePerimeter();
-        document.getElementById("area").innerHTML = "Area = " + triangle.calculatePerimeter();
-        break;
+        case "circle" :
+            circle.draw(ctx);
+            document.getElementById("circle").style.display="block";
+            document.getElementById("perimeter").innerHTML = "Perimeter = " + circle.calculatePerimeter();
+            document.getElementById("area").innerHTML = "Area = " + circle.calculatePerimeter();
+            break;
+        case "rectangle" :
+            rectangle.draw(ctx);
+            document.getElementById("rectangle").style.display="block";
+            document.getElementById("perimeter").innerHTML = "Perimeter = " + rectangle.calculatePerimeter();
+            document.getElementById("area").innerHTML = "Area = " + rectangle.calculatePerimeter();
+            break;
+        case "triangle" :
+            triangle.draw(ctx);
+            document.getElementById("triangle").style.display="block";
+            document.getElementById("perimeter").innerHTML = "Perimeter = " + triangle.calculatePerimeter();
+            document.getElementById("area").innerHTML = "Area = " + triangle.calculatePerimeter();
+            break;
     }
 }
 

@@ -1,11 +1,9 @@
-module.exports = {
-  all: {
-    files: [{
-      expand: true,
-      cwd: 'src/scripts',
-      src: '**/*.js',
-      dest: 'dist/scripts',
-      ext: '.min.js'
-    }]
-  }
+module.exports = 
+{ 
+    all: 
+    {
+        expand: true,
+        src: '.build/js/script.js', 
+        dest: '.build/js/script.min.js' 
+    } 
 };

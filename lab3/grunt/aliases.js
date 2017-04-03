@@ -1,4 +1,4 @@
 module.exports =
 {
-    'default': ['clean', 'concat', 'connect', 'copy:html', 'cssmin', 'uglify', 'watch', 'eslint', 'hashres:prod']
+    'default': ['clean', 'concat', 'eslint', 'uglify', 'cssmin', 'hashres:prod', 'copy', 'connect', 'watch']
 };

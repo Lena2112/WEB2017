@@ -6,7 +6,7 @@ module.exports =
     },
     prod:
     {
-        src: ['.build/js/script.js', '.build/css/style.css'],
+        src: ['.build/js/script.js', '.build/css/style.css', '.build/images/*.{png,jpg,gif}'],
         dest: 'index.html'
     }
 };
