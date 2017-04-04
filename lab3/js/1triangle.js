@@ -24,10 +24,10 @@ Triangle.prototype.draw = function(canvas) {
 };
 
 Triangle.prototype.calculateArea = function() {
-    return Math.sqrt(this.perimeter / 2 * 
-           (this.perimeter / 2 - calculateDistance(this.X1, this.Y1, this.X2, this.Y2)) *
-           (this.perimeter / 2 - calculateDistance(this.X1, this.Y1, this.X3, this.Y3)) *
-           (this.perimeter / 2 - calculateDistance(this.X2, this.Y2, this.X3, this.Y3)));
+    return Math.sqrt(this.calculatePerimeter() / 2 * 
+           (this.calculatePerimeter() / 2 - calculateDistance(this.X1, this.Y1, this.X2, this.Y2)) *
+           (this.calculatePerimeter() / 2 - calculateDistance(this.X1, this.Y1, this.X3, this.Y3)) *
+           (this.calculatePerimeter() / 2 - calculateDistance(this.X2, this.Y2, this.X3, this.Y3)));
 };
 
 function calculateDistance(x1, y1, x2, y2)

@@ -7,6 +7,6 @@ module.exports =
             livereload: true
         },
         files: ['index.html', 'js/*.js', 'css/*.css'],
-        tasks: 'build'
+        tasks: ['clean', 'concat', 'eslint', 'uglify', 'cssmin', 'hashres:prod', 'copy']
     }
 };

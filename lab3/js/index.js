@@ -21,19 +21,19 @@ function ShapeDraw(value)
             circle.draw(ctx);
             document.getElementById("circle").style.display="block";
             document.getElementById("perimeter").innerHTML = "Perimeter = " + circle.calculatePerimeter();
-            document.getElementById("area").innerHTML = "Area = " + circle.calculatePerimeter();
+            document.getElementById("area").innerHTML = "Area = " + circle.calculateArea();
             break;
         case "rectangle" :
             rectangle.draw(ctx);
             document.getElementById("rectangle").style.display="block";
             document.getElementById("perimeter").innerHTML = "Perimeter = " + rectangle.calculatePerimeter();
-            document.getElementById("area").innerHTML = "Area = " + rectangle.calculatePerimeter();
+            document.getElementById("area").innerHTML = "Area = " + rectangle.calculateArea();
             break;
         case "triangle" :
             triangle.draw(ctx);
             document.getElementById("triangle").style.display="block";
             document.getElementById("perimeter").innerHTML = "Perimeter = " + triangle.calculatePerimeter();
-            document.getElementById("area").innerHTML = "Area = " + triangle.calculatePerimeter();
+            document.getElementById("area").innerHTML = "Area = " + triangle.calculateArea();
             break;
     }
 }

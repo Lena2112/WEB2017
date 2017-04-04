@@ -2,7 +2,7 @@ module.exports =
 {
     files:
     {
-        src: ['css/style.css', 'node_modules/bootstrap/dist/css/bootstrap.min.css'],
+        src: ['node_modules/bootstrap/dist/css/bootstrap.min.css', 'css/style.css'],
         dest: '.build/css/style.css' 
     }
 };
