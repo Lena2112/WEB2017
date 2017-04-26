@@ -17,7 +17,7 @@ class Rectangle extends Shape {
         return Math.abs((this.posX2 - this.posX1) * (this.posY2 - this.posY1));
     }
     public calculatePerimeter(): number {
-        return 2 * Math.abs(((this.posX2 - this.posX1) + (this.posY2 - this.posY1)));
+        return 2 * (Math.abs(this.posX2 - this.posX1) + Math.abs(this.posY2 - this.posY1));
     }
     public draw(ctx: CanvasRenderingContext2D): void {
         ctx.lineWidth = 2;
