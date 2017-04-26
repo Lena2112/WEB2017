@@ -1,4 +1,4 @@
-let App = React.createСlass ({
+let App = React.createClass ({
    render: function() {
       return (
          <div className="center-block">
@@ -39,7 +39,7 @@ let BasicSettings  = React.createСlass ({
               <input className="form-control" id="fill_color" type="text"></input>  
               <h2>Border color:</h2>
               <input className="form-control" id="border_color" type="text"></input>
-			</div>
+            </div>
         )
     }
 });
@@ -100,8 +100,10 @@ let TriangleSettings = React.createСlass ({
 let InfoBlock = React.createСlass ({
     render() {
         return (
-            <h2 id="perimeter"></h2>
-            <h2 id="area"></h2>
+		    <div>
+                <h2 id="perimeter"></h2>
+                <h2 id="area"></h2>
+			</div>
         );
     }
 });
