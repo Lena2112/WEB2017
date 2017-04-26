@@ -1,0 +1,68 @@
+body
+{
+    padding: 0;
+    background: url(../images/bg.jpg);
+}
+
+.form-control
+{
+    padding: 0;
+    height: 25px;
+    border-width: 1px;
+}
+
+.form-inline .form-group 
+{
+    display:inline;
+}
+
+
+.center-block
+{    
+    margin: auto;
+    padding: 0;
+    padding-top: 50px;
+    text-align: center;
+    height: 500px;
+}
+
+.left-block
+{
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-top: 80px;
+}
+
+.right-block
+{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+canvas
+{ 
+    float: right;
+    width: 80%;
+    height: 75%;
+    border: 2px dashed #000;
+    background: rgba(255,255,255,0.5);
+}
+
+#circle, #rectangle, #triangle
+{
+    display: none;
+}
+
+h2, h1
+{
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h2
+{
+    margin: 0;
+}
