@@ -21,19 +21,19 @@ class Circle extends Shape {
         ctx.beginPath();
         ctx.arc(this._centerX, this._centerY, this._radius, 0, Math.PI * 2);
         ctx.closePath();
-        ctx.fillStyle = this._fillColor;
-        ctx.strokeStyle = this._borderColor;
+        ctx.fillStyle = this.fillColor;
+        ctx.strokeStyle = this.borderColor;
         ctx.lineWidth = 2;
         ctx.fill();
         ctx.stroke();
     }
-	set _radius(radius: string) {
+    set radius(radius: number) {
         this._radius = radius;
-    
-	set _centerX(x: string) {
+    }
+    set centerX(x: number) {
         this._centerX = x;
     }
-	set _centerY(y: string) {
+    set centerY(y: number) {
         this._centerY = y;
     }
 }

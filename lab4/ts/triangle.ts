@@ -10,12 +10,12 @@ class Triangle extends Shape {
 
     constructor() {
         super();
-        this._X1 = 50;
-        this._Y1 = 50;
-        this._X2 = 100;
-        this._Y2 = 50;
-        this._X3 = 75;
-        this._Y3 = 100;
+        this.X1 = 50;
+        this.Y1 = 50;
+        this.X2 = 100;
+        this.Y2 = 50;
+        this.X3 = 75;
+        this.Y3 = 100;
     }
     public calculateArea(): number {
         return Math.sqrt(this.calculatePerimeter() / 2 *
@@ -43,22 +43,22 @@ class Triangle extends Shape {
     private calculateDistance(_X1: number, _Y1: number, _X2: number, _Y2: number): number {
         return Math.sqrt((_X1 - _X2) * (_X1 - _X2) + (_Y1 - _Y2) * (_Y1 - _Y2));
     }
-	set _X1(x: string) {
+    set X1(x: number) {
         this._X1 = x;
     }
-	set _Y1(y: string) {
+    set Y1(y: number) {
         this._Y1 = y;
     }
-	set _X2(x: string) {
+    set X2(x: number) {
         this._X2 = x;
     }
-	set _Y2(y: string) {
+    set Y2(y: number) {
         this._Y2 = y;
     }
-	set _X3(x: string) {
+    set X3(x: number) {
         this._X3 = x;
     }
-	set _Y3(y: string) {
+    set Y3(y: number) {
         this._Y3 = y;
     }
 }

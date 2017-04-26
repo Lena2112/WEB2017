@@ -37,6 +37,8 @@ function shapeDraw(value: string) {
             document.getElementById("perimeter").innerHTML = "Perimeter = " + triangle.calculatePerimeter();
             document.getElementById("area").innerHTML = "Area = " + triangle.calculateArea();
             break;
+        default:
+            break;
     }
 }
 

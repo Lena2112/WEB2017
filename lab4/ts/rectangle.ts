@@ -8,10 +8,10 @@ class Rectangle extends Shape {
 
     constructor() {
         super();
-        this._X1 = 50;
-        this._Y1 = 50;
-        this._X2 = 100;
-        this._Y2 = 100;
+        this.X1 = 50;
+        this.Y1 = 50;
+        this.X2 = 100;
+        this.Y2 = 100;
     }
     public calculateArea(): number {
         return Math.abs((this._X2 - this._X1) * (this._Y2 - this._Y1));
@@ -26,16 +26,16 @@ class Rectangle extends Shape {
         ctx.fillRect(this._X1, this._Y1, this._X2 - this._X1, this._Y2 - this._Y1);
         ctx.strokeRect(this._X1, this._Y1, this._X2 - this._X1, this._Y2 - this._Y1);
     }
-	set _X1(x: string) {
-        this._X1 = x;
+    set X1(x: number) {
+        this.X1 = x;
     }
-	set _Y1(y: string) {
+    set Y1(y: number) {
         this._Y1 = y;
     }
-	set _X2(x: string) {
+    set X2(x: number) {
         this._X2 = x;
     }
-	set _Y2(y: string) {
+    set Y2(y: number) {
         this._Y2 = y;
     }
 }
