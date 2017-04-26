@@ -22,12 +22,12 @@
     "grunt-shell": "^2.1.0",
     "grunt-systemjs-builder": "^1.0.0",
     "grunt-ts": "^6.0.0-beta.15",
-    "grunt-tslint": "^5.0.1",
+    "grunt-tslint": "^4.0.1",
     "load-grunt-config": "^0.19.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "time-grunt": "^1.4.0",
-    "tslint": "^5.1.0",
+    "tslint": "^4.5.0",
     "typescript": "^2.2.2"
   },
   "dependencies": {
