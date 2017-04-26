@@ -10,13 +10,13 @@ let triangle: Triangle = new Triangle();
 let canvas: HTMLCanvasElement = <HTMLCanvasElement> document.getElementById("canvas");
 let ctx: CanvasRenderingContext2D = canvas.getContext("2d");
 
-function ClearParameters(): void{
+function clearParameters(): void{
     <HTMLInputElement> document.getElementById("circle").style.display="none";
     <HTMLInputElement> document.getElementById("rectangle").style.display="none";
     <HTMLInputElement> document.getElementById("triangle").style.display="none";
 }
 
-function ShapeDraw(value: string){
+function shapeDraw(value: string){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     switch(value)
     {
@@ -43,8 +43,8 @@ function ShapeDraw(value: string){
 
 let shape: Shape: number = <HTMLInputElement> document.getElementById("select");
 shape.onchange = (): void => {
-    ClearParameters();
-    ShapeDraw(shape.value);
+    clearParameters();
+    shapeDraw(shape.value);
 };
 
 let fillColor: string: number = <HTMLInputElement> document.getElementById("fill_color");
@@ -52,7 +52,7 @@ fillColor.onchange = (): void => {
     circle.fillColor = fillColor.value;
     rectangle.fillColor = fillColor.value;
     triangle.fillColor = fillColor.value;
-    ShapeDraw(shape.value);
+    shapeDraw(shape.value);
 };
 
 let borderColor: string: number = <HTMLInputElement> document.getElementById("border_color");
@@ -60,13 +60,13 @@ borderColor.onchange = (): void => {
     circle.borderColor = borderColor.value;
     rectangle.borderColor = borderColor.value;
     triangle.borderColor = borderColor.value;
-    ShapeDraw(shape.value);
+    shapeDraw(shape.value);
 };
 
 let radius: number = <HTMLInputElement> document.getElementById("radius");
 radius.onchange = (): void => {
     circle.radius = radius.value;
-    ShapeDraw(shape.value);
+    shapeDraw(shape.value);
 };
 
 let centerX: number = <HTMLInputElement> document.getElementById("centerX");
@@ -78,7 +78,7 @@ centerX.onchange = (): void => {
 let centerY: number = <HTMLInputElement> document.getElementById("centerY");
 centerY.onchange = (): void => {
     circle.centerY = centerY.value;
-    ShapeDraw(shape.value);
+    shapeDraw(shape.value);
 };
 
 let x1Rec: number = <HTMLInputElement> document.getElementById("x1_rectangle");

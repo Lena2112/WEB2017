@@ -4,9 +4,9 @@ abstract class Shape implements IShape {
     private _fillColor: string = "#000";
     private _borderColor: string = "#999";
 
-    public abstract CalculateArea(): number;
-    public abstract CalculatePerimeter(): number;
-    public abstract Draw(ctx: CanvasRenderingContext2D): void;
+    public abstract calculateArea(): number;
+    public abstract calculatePerimeter(): number;
+    public abstract draw(ctx: CanvasRenderingContext2D): void;
     set fillColor(color: string) {
         this._fillColor = color;
     }

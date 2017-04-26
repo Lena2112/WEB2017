@@ -1,5 +1,5 @@
 export interface IShape {
-    CalculateArea(): number;
-    CalculatePerimeter(): number;
-    Draw(ctx: CanvasRenderingContext2D): void;
+    calculateArea(): number;
+    calculatePerimeter(): number;
+    draw(ctx: CanvasRenderingContext2D): void;
 }
