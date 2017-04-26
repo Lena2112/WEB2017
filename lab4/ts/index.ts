@@ -3,140 +3,139 @@ import {Rectangle} from "./rectangle";
 import {Shape} from "./shape";
 import {Triangle} from "./triangle";
 
-let circle: Circle = new Circle();
-let rectangle: Rectangle = new Rectangle();
-let triangle: Triangle = new Triangle();
+const circle: Circle = new Circle();
+const rectangle: Rectangle = new Rectangle();
+const triangle: Triangle = new Triangle();
 
-let canvas: HTMLCanvasElement = <HTMLCanvasElement> document.getElementById("canvas");
-let ctx: CanvasRenderingContext2D = canvas.getContext("2d");
+const canvas: HTMLCanvasElement = document.getElementById("canvas") as HTMLCanvasElement;
+const ctx: CanvasRenderingContext2D = canvas.getContext("2d");
 
-function clearParameters(): void{
-    <HTMLInputElement> document.getElementById("circle").style.display="none";
-    <HTMLInputElement> document.getElementById("rectangle").style.display="none";
-    <HTMLInputElement> document.getElementById("triangle").style.display="none";
+function clearParameters(): void {
+    document.getElementById("circle").style.display = "none";
+    document.getElementById("rectangle").style.display = "none";
+    document.getElementById("triangle").style.display = "none";
 }
 
-function shapeDraw(value: string){
+function shapeDraw(value: string) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    switch(value)
-    {
-        case "circle" :
+    switch (value) {
+        case "circle":
             circle.draw(ctx);
-            <HTMLInputElement> document.getElementById("circle").style.display="block";
-            <HTMLInputElement> document.getElementById("perimeter").innerHTML = "Perimeter = " + circle.calculatePerimeter();
-            <HTMLInputElement> document.getElementById("area").innerHTML = "Area = " + circle.calculateArea();
+            document.getElementById("circle").style.display = "block";
+            document.getElementById("perimeter").innerHTML = "Perimeter = " + circle.calculatePerimeter();
+            document.getElementById("area").innerHTML = "Area = " + circle.calculateArea();
             break;
-        case "rectangle" :
+        case "rectangle":
             rectangle.draw(ctx);
-            <HTMLInputElement> document.getElementById("rectangle").style.display="block";
-            <HTMLInputElement> document.getElementById("perimeter").innerHTML = "Perimeter = " + rectangle.calculatePerimeter();
-            <HTMLInputElement> document.getElementById("area").innerHTML = "Area = " + rectangle.calculateArea();
+            document.getElementById("rectangle").style.display = "block";
+            document.getElementById("perimeter").innerHTML = "Perimeter = " + rectangle.calculatePerimeter();
+            document.getElementById("area").innerHTML = "Area = " + rectangle.calculateArea();
             break;
-        case "triangle" :
+        case "triangle":
             triangle.draw(ctx);
-            <HTMLInputElement> document.getElementById("triangle").style.display="block";
-            <HTMLInputElement> document.getElementById("perimeter").innerHTML = "Perimeter = " + triangle.calculatePerimeter();
-            <HTMLInputElement> document.getElementById("area").innerHTML = "Area = " + triangle.calculateArea();
+            document.getElementById("triangle").style.display = "block";
+            document.getElementById("perimeter").innerHTML = "Perimeter = " + triangle.calculatePerimeter();
+            document.getElementById("area").innerHTML = "Area = " + triangle.calculateArea();
             break;
     }
 }
 
-let shape: string = <HTMLInputElement> document.getElementById("select").value;
+const shape: HTMLInputElement = document.getElementById("select") as HTMLInputElement;
 shape.onchange = (): void => {
     clearParameters();
-    shapeDraw(shape);
+    shapeDraw(shape.value);
 };
 
-let fillColor: string = <HTMLInputElement> document.getElementById("fill_color").value;
+const fillColor: HTMLInputElement = document.getElementById("fill_color") as HTMLInputElement;
 fillColor.onchange = (): void => {
-    circle.fillColor = fillColor;
-    rectangle.fillColor = fillColor;
-    triangle.fillColor = fillColor;
-    shapeDraw(shape);
+    circle.fillColor = fillColor.value;
+    rectangle.fillColor = fillColor.value;
+    triangle.fillColor = fillColor.value;
+    shapeDraw(shape.value);
 };
 
-let borderColor: string = <HTMLInputElement> document.getElementById("border_color").value;
+const borderColor: HTMLInputElement = document.getElementById("border_color") as HTMLInputElement;
 borderColor.onchange = (): void => {
-    circle.borderColor = borderColor;
-    rectangle.borderColor = borderColor;
-    triangle.borderColor = borderColor;
-    shapeDraw(shape);
+    circle.borderColor = borderColor.value;
+    rectangle.borderColor = borderColor.value;
+    triangle.borderColor = borderColor.value;
+    shapeDraw(shape.value);
 };
 
-let radius: number = <HTMLInputElement> document.getElementById("radius").value;
+const radius: HTMLInputElement = document.getElementById("radius") as HTMLInputElement;
 radius.onchange = (): void => {
-    circle.radius = radius;
-    shapeDraw(shape);
+    circle.radius = parseInt(radius.value, 10);
+    shapeDraw(shape.value);
 };
 
-let centerX: number = <HTMLInputElement> document.getElementById("centerX").value;
+const centerX: HTMLInputElement = document.getElementById("centerX") as HTMLInputElement;
 centerX.onchange = (): void => {
-    circle.centerX = centerX;
-    ShapeDraw(shape);
+    circle.centerX = parseInt(centerX.value, 10);
+    shapeDraw(shape.value);
 };
 
-let centerY: number = <HTMLInputElement> document.getElementById("centerY").value;
+const centerY: HTMLInputElement = document.getElementById("centerY") as HTMLInputElement;
 centerY.onchange = (): void => {
-    circle.centerY = centerY;
-    shapeDraw(shape);
+    circle.centerY = parseInt(centerY.value, 10);
+    shapeDraw(shape.value);
 };
 
-let x1Rec: number = <HTMLInputElement> document.getElementById("x1_rectangle").value;
+const x1Rec: HTMLInputElement = document.getElementById("x1_rectangle") as HTMLInputElement;
 x1Rec.onchange = (): void => {
-    rectangle.X1 = x1Rec;
-    ShapeDraw(shape);
+    rectangle.X1 = parseInt(x1Rec.value, 10);
+    shapeDraw(shape.value);
 };
 
-let y1Rec: number = <HTMLInputElement> document.getElementById("y1_rectangle").value;
+const y1Rec: HTMLInputElement = document.getElementById("y1_rectangle") as HTMLInputElement;
 y1Rec.onchange = (): void => {
-    rectangle.Y1 = y1Rec;
-    ShapeDraw(shape);
+    rectangle.Y1 = parseInt(y1Rec.value, 10);
+    shapeDraw(shape.value);
 };
 
-let x2Rec: number = <HTMLInputElement> document.getElementById("x2_rectangle").value;
+const x2Rec: HTMLInputElement = document.getElementById("x2_rectangle") as HTMLInputElement;
 x2Rec.onchange = (): void => {
-    rectangle.X2 = x2Rec;
-    ShapeDraw(shape);
+    rectangle.X2 = parseInt(x2Rec.value, 10);
+    shapeDraw(shape.value);
 };
 
-let y2Rec: number = <HTMLInputElement> document.getElementById("y2_rectangle").value;
+const y2Rec: HTMLInputElement = document.getElementById("y2_rectangle") as HTMLInputElement;
 y2Rec.onchange = (): void => {
-    rectangle.Y2 = y2Rec;
-    ShapeDraw(shape);
+    rectangle.Y2 = parseInt(y2Rec.value, 10);
+    shapeDraw(shape.value);
 };
 
-let x1Tr: number = <HTMLInputElement> document.getElementById("x1_triangle").value;
+const x1Tr: HTMLInputElement = document.getElementById("x1_triangle") as HTMLInputElement;
 x1Tr.onchange = (): void => {
-    triangle.X1 = x1Tr;
-    ShapeDraw(shape);
+    triangle.X1 = parseInt(x1Tr.value, 10);
+    shapeDraw(shape.value);
 };
 
-let y1Tr: number = <HTMLInputElement> document.getElementById("y1_triangle").value;
+const y1Tr: HTMLInputElement = document.getElementById("y1_triangle") as HTMLInputElement;
 y1Tr.onchange = (): void => {
-    triangle.Y1 = y1Tr;
-    ShapeDraw(shape);
+    triangle.Y1 = parseInt(y1Tr.value, 10);
+    shapeDraw(shape.value);
 };
 
-let x2Tr: number = <HTMLInputElement> document.getElementById("x2_triangle").value;
+const x2Tr: HTMLInputElement = document.getElementById("x2_triangle") as HTMLInputElement;
 x2Tr.onchange = (): void => {
-    triangle.X2 = x2Tr;
-    ShapeDraw(shape);
+    triangle.X2 = parseInt(x2Tr.value, 10);
+    shapeDraw(shape.value);
 };
 
-let y2Tr: number = <HTMLInputElement> document.getElementById("y2_triangle").value;
+const y2Tr: HTMLInputElement = document.getElementById("y2_triangle")  as HTMLInputElement;
 y2Tr.onchange = (): void => {
-    triangle.Y2 = y2Tr;
-    ShapeDraw(shape);
+    triangle.Y2 = parseInt(y2Tr.value, 10);
+    shapeDraw(shape.value);
 };
 
-let x3Tr: number = <HTMLInputElement> document.getElementById("x3_triangle").value;
+const x3Tr: HTMLInputElement = document.getElementById("x3_triangle") as HTMLInputElement;
 x3Tr.onchange = (): void => {
-    triangle.X3 = x3Tr;
-    ShapeDraw(shape);
+    triangle.X3 = parseInt(x3Tr.value, 10);
+    shapeDraw(shape.value);
 };
 
-let y3Tr: number = <HTMLInputElement> document.getElementById("y3_triangle").value;
+const y3Tr: HTMLInputElement = document.getElementById("y3_triangle") as HTMLInputElement;
 y3Tr.onchange = (): void => {
-    triangle.Y3 = y3Tr;
-    ShapeDraw(shape);
+    triangle.Y3 = parseInt(y3Tr.value, 10);
+    shapeDraw(shape.value);
 };
