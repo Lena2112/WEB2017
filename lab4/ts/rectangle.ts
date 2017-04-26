@@ -27,7 +27,7 @@ class Rectangle extends Shape {
         ctx.strokeRect(this._X1, this._Y1, this._X2 - this._X1, this._Y2 - this._Y1);
     }
     set X1(x: number) {
-        this.X1 = x;
+        this._X1 = x;
     }
     set Y1(y: number) {
         this._Y1 = y;

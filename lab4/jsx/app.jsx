@@ -9,7 +9,7 @@ let App = React.createClass ({
    }
 });
 
-let SettingsForm = React.createСlass({
+let SettingsForm = React.createClass({
     render() {
         return (
             <div className="right-block">
@@ -25,7 +25,7 @@ let SettingsForm = React.createСlass({
     }
 });
 
-let BasicSettings  = React.createСlass ({
+let BasicSettings  = React.createClass ({
     render() {
         return (
             <div className="form-group">
@@ -44,7 +44,7 @@ let BasicSettings  = React.createСlass ({
     }
 });
 
-let CircleSettings = React.createСlass ({
+let CircleSettings = React.createClass ({
     render() {
         return (
             <div className="form-group" id="circle">
@@ -59,7 +59,7 @@ let CircleSettings = React.createСlass ({
     }
 });
 
-let RectangleSettings = React.createСlass ({
+let RectangleSettings = React.createClass ({
     render() {
         return (
             <div className="form-group" id="rectangle">
@@ -76,7 +76,7 @@ let RectangleSettings = React.createСlass ({
     }
 });
 
-let TriangleSettings = React.createСlass ({
+let TriangleSettings = React.createClass ({
     render() {
         return (
             <div className="form-group" id="triangle">
@@ -97,7 +97,7 @@ let TriangleSettings = React.createСlass ({
     }
 });
 
-let InfoBlock = React.createСlass ({
+let InfoBlock = React.createClass ({
     render() {
         return (
 		    <div>
@@ -108,7 +108,7 @@ let InfoBlock = React.createСlass ({
     }
 });
 
-let Canvas = React.createСlass ({
+let Canvas = React.createClass ({
     render() {
         return (
             <div className="left-block">
