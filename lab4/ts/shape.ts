@@ -1,4 +1,4 @@
-import {IShape} from "ishape";
+import {IShape} from "iShape";
 
 abstract class Shape implements IShape {
     private _fillColor: string = "#000";

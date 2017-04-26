@@ -1,4 +1,4 @@
-let App = React.createclass ({
+let App = React.createСlass ({
    render: function() {
       return (
          <div className="center-block">
@@ -9,7 +9,7 @@ let App = React.createclass ({
    }
 });
 
-let SettingsForm = React.createclass({
+let SettingsForm = React.createСlass({
     render() {
         return (
             <div className="right-block">
@@ -25,7 +25,7 @@ let SettingsForm = React.createclass({
     }
 });
 
-let BasicSettings  = React.createclass ({
+let BasicSettings  = React.createСlass ({
     render() {
         return (
             <div className="form-group">
@@ -44,7 +44,7 @@ let BasicSettings  = React.createclass ({
     }
 });
 
-let CircleSettings = React.createclass ({
+let CircleSettings = React.createСlass ({
     render() {
         return (
             <div className="form-group" id="circle">
@@ -59,7 +59,7 @@ let CircleSettings = React.createclass ({
     }
 });
 
-let RectangleSettings = React.createclass ({
+let RectangleSettings = React.createСlass ({
     render() {
         return (
             <div className="form-group" id="rectangle">
@@ -76,7 +76,7 @@ let RectangleSettings = React.createclass ({
     }
 });
 
-let TriangleSettings = React.createclass ({
+let TriangleSettings = React.createСlass ({
     render() {
         return (
             <div className="form-group" id="triangle">
@@ -97,7 +97,7 @@ let TriangleSettings = React.createclass ({
     }
 });
 
-let InfoBlock = React.createclass ({
+let InfoBlock = React.createСlass ({
     render() {
         return (
             <h2 id="perimeter"></h2>
@@ -106,7 +106,7 @@ let InfoBlock = React.createclass ({
     }
 });
 
-let Canvas = React.createclass ({
+let Canvas = React.createСlass ({
     render() {
         return (
             <div className="left-block">
