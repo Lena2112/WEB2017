@@ -1,0 +1,37 @@
+{
+  "name": "Lab3_WEB",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "grunt"
+  },
+  "devDependencies": {
+    "cspell": "^1.5.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-uglify": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^19.0.0",
+    "grunt-file-hash": "^0.1.6",
+    "grunt-hashres": "^0.4.1",
+    "grunt-react": "^0.12.3",
+    "grunt-shell-spawn": "^0.3.10",
+    "grunt-systemjs-builder": "^1.0.0",
+    "grunt-ts": "^6.0.0-beta.15",
+    "grunt-tslint": "^4.0.1",
+    "load-grunt-config": "^0.19.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "time-grunt": "^1.4.0",
+    "tslint": "^4.5.0",
+    "typescript": "^2.2.2"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
